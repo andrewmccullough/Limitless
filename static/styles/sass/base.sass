@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito:200,300,400,600,700,800,900")
+
+$background: #daecf3
+$accent: #ff404e
+$dark: #012d41
+$light: #1ca5b8
+$athens: #ecf0f1
+
+$nunito: "Nunito", sans-serif
+
+@mixin noselect
+	user-select: none
+
+html
+	height: 100%
+
+	font-size: 1rem
+
+body
+	background: $athens
+
+	height: 100%
+
+	margin: 0
+
+body.locked
+	overflow: hidden
+
+*
+    box-sizing: border-box
+
+a
+	color: inherit
+
+	cursor: pointer
+
+.tippy-popper
+	font-family: $nunito
+	font-weight: 600

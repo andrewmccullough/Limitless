@@ -1,0 +1,285 @@
+@import "base"
+
+body
+    text-align: center
+
+#cover
+    background: white
+
+    position: fixed
+
+    height: 100%
+    top: 0
+    width: 100%
+    left: 0
+
+    opacity: 0.80
+    visibility: hidden
+
+    cursor: pointer
+
+    z-index: 10
+
+#cover.active
+    visibility: visible
+
+#header
+    position: fixed
+
+    z-index: 5
+
+    width: 100%
+    height: 80px
+    left: 0
+    top: 0
+
+    padding: 0 16px
+
+    @include noselect
+
+    .left, .right
+
+        .active
+
+            a
+                cursor: default
+
+        p
+
+            margin: 16px 0      //used for positioning, must total to 26px
+            clear: none
+            display: inline-block
+
+            font-family: $nunito
+            font-weight: 900
+            font-size: 1.1rem
+
+            a
+                display: inline-block
+
+                padding: 10px   //used for positioning, must total to 26px
+
+                text-decoration: none
+
+        p:hover, p.active
+            color: white
+
+    .left
+        float: left
+
+        height: 100%
+
+        p
+            color: $accent
+
+        p:hover, p.active
+            background: $accent
+
+    .right
+        float: right
+
+        height: 100%
+
+        p
+            color: $dark
+            text-transform: lowercase
+
+        p:hover, p.active
+            background: $dark
+
+#splash
+    width: 100%
+
+    margin: 80px 0 0 0
+    padding: 50px 0
+
+    text-align: center
+    @include noselect
+
+    img
+        max-width: 300px
+        width: 90%
+
+#languages, #tools
+    max-height: 208px
+    overflow: hidden
+    @include noselect
+
+    .container
+        max-width: 420px
+        width: 90%
+
+        margin: 0 auto
+
+        text-align: left
+
+        h3
+            margin: 10px
+
+            text-align: left
+            font-family: $nunito
+            font-weight: 800
+            color: $dark
+            font-size: 0.9rem
+            text-transform: uppercase
+
+            opacity: 0.90
+
+        img
+            width: 60px
+            margin: 10px
+
+            filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale")
+            filter: gray
+            -webkit-filter: grayscale(100%)
+            //transition: all 300ms ease
+
+        img:hover, img.colorized
+            filter: none
+            -webkit-filter: grayscale(0%)
+
+#section
+    opacity: 0.50
+
+    width: 50px
+
+    margin: 60px 0
+
+#projects
+    @include noselect
+
+    .container
+        margin: 0 auto 30px auto
+
+        max-width: 400px
+
+        h3
+            max-width: 420px
+
+            margin: 0 10px 10px 10px
+
+            text-align: left
+            font-family: $nunito
+            font-weight: 800
+            color: $dark
+            font-size: 0.9rem
+            text-transform: uppercase
+
+            opacity: 0.90
+
+        hr.title
+            max-width: 420px
+
+        .separator
+            visibility: hidden
+
+        .project:nth-of-type(odd)
+
+            .info
+                float: left
+
+                padding: 20px 0 0 20px
+
+                text-align: left
+
+            .preview
+                float: right
+
+        .project:nth-of-type(even)
+
+            .info
+                float: right
+
+                padding: 20px 20px 0 0
+
+                text-align: right
+
+            .preview
+                float: left
+
+        .project
+            //background: gray
+
+            width: 100%
+            height: 220px
+
+            margin: 0 0 0 0
+
+            .info
+                height: 100%
+                width: 45%
+
+                h4
+                    margin: 0 0 5px 0
+
+                    font-size: 1.4rem
+                    font-family: $nunito
+                    font-weight: 900
+                    line-height: 1.3rem
+
+                .date
+                    margin: 0
+
+                    font-family: $nunito
+                    font-weight: 400
+
+                .description
+                    margin: 6px 0 0 0
+
+                    font-family: $nunito
+                    font-weight: 300
+                    font-style: italic
+
+                .button
+                    background: $dark
+
+                    display: inline-block
+
+                    margin: 10px 0 0 0
+
+                    color: $athens
+                    font-family: $nunito
+                    font-weight: 900
+                    font-size: 1.1rem
+                    line-height: 1.5rem
+
+                    a
+                        display: inline-block
+
+                        padding: 10px
+
+                        text-decoration: none
+
+                .button:hover
+                    background: $accent
+
+                .button.disabled
+                    pointer-events: none
+
+                    opacity: 0.30
+
+            .preview
+                height: 100%
+                width: 55%
+
+                padding: 50px 10px
+
+                vertical-align: middle
+
+                img
+                    width: 100%
+
+                    vertical-align: middle
+
+                    cursor: pointer
+
+                img.scale
+                    position: fixed
+
+                    top: calc(50% - 270px)
+                    width: 800px
+                    left: calc(50% - 400px)
+
+                    z-index: 15
+
+                    cursor: pointer

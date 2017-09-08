@@ -1,0 +1,208 @@
+@import "base"
+
+#header
+    position: fixed
+    z-index: 5
+
+    top: 0
+    height: 80px
+    left: 0
+    width: 100%
+
+    padding: 0 16px
+
+    @include noselect
+
+    .left, .right
+
+        .active
+
+            a
+                cursor: default
+
+        p
+            display: inline-block
+            clear: none
+
+            margin: 16px 0      //used for positioning, must total to 26px
+
+            font-family: $nunito
+            font-size: 1.1rem
+            font-weight: 900
+
+            a
+                display: inline-block
+
+                padding: 10px   //used for positioning, must total to 26px
+
+                text-decoration: none
+
+        p:hover, p.active
+            color: white
+
+    .left
+        float: left
+
+        height: 100%
+
+        p
+            color: $accent
+
+        p:hover, p.active
+            background: $accent
+
+    .right
+        float: right
+
+        height: 100%
+
+        p
+            color: $dark
+            text-transform: lowercase
+
+        p:hover, p.active
+            background: $dark
+
+#splash
+    position: relative
+
+    min-height: 100%
+    width: 100%
+
+    text-align: center
+
+    @include noselect
+
+    img
+        opacity: 0
+
+        display: block
+        position: absolute
+
+        max-width: 600px
+
+        transition: opacity ease 700ms
+
+    #prompt
+        position: absolute
+
+        bottom: 20px
+        width: 100%
+
+        margin: 0
+
+        color: rgb(170, 170, 170)
+        font-family: $nunito
+        font-size: 0.8rem
+        font-weight: 400
+        text-align: center
+        text-transform: uppercase
+
+        transition: opacity ease 200ms
+
+#headline
+    position: relative
+
+    width: 100%
+
+    @include noselect
+
+    .container
+        width: 100%
+
+        text-align: center
+
+        h2
+            margin: 0
+
+            font-family: $nunito
+            font-size: 5rem
+            font-weight: 900
+
+            white-space: nowrap
+
+            #rotate
+                display: inline-block
+                overflow: hidden
+
+                height: 109px
+
+                vertical-align: middle
+
+                span
+                    display: inline-block
+                    float: right
+                    clear: right
+
+                    color: $accent
+
+                span:nth-child(1)
+                    transition: margin ease 400ms
+
+                span:nth-child(2)
+                    transition: margin ease 400ms
+
+            > span
+                display: inline-block
+                vertical-align: middle
+
+                color: $dark
+
+#introduction
+    position: relative
+
+    min-height: 100%
+    width: 100%
+
+    opacity: 0
+
+    @include noselect
+
+    .container
+        position: absolute
+
+        width: 90%
+        max-width: 600px
+
+        margin: 0 auto
+
+        > h2
+            margin: 0 0 20px 0
+
+            color: $dark
+            font-family: $nunito
+            font-size: 2.5rem
+            font-weight: 900
+            text-transform: lowercase
+
+        > p
+            margin: 0
+
+            color: $dark
+            font-family: $nunito
+            font-size: 1.2rem
+            font-weight: 300
+            line-height: 2.2rem
+
+        .button
+            background: $dark
+
+            display: inline-block
+
+            margin: 28px 0 0 0
+
+            color: $athens
+            font-family: $nunito
+            font-size: 1.1rem
+            font-weight: 900
+            line-height: 1.5rem
+
+            a
+                display: inline-block
+
+                padding: 10px
+
+                text-decoration: none
+
+        .button:hover
+            background: $accent

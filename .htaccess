@@ -1,0 +1,6 @@
+RewriteEngine On
+DirectoryIndex index.html
+Options -MultiViews
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ $1.html [NC,L]
