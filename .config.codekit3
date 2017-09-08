@@ -160,7 +160,7 @@
 		"oS": 3
 		},
 	"\/static\/styles\/sass\/base.sass": {
-		"aP": 0,
+		"aP": 1,
 		"bl": 0,
 		"dP": 10,
 		"dS": 0,
@@ -173,7 +173,7 @@
 		"uL": 1
 		},
 	"\/static\/styles\/sass\/contact.sass": {
-		"aP": 0,
+		"aP": 1,
 		"bl": 0,
 		"dP": 10,
 		"dS": 0,
@@ -199,7 +199,7 @@
 		"uL": 1
 		},
 	"\/static\/styles\/sass\/projects.sass": {
-		"aP": 0,
+		"aP": 1,
 		"bl": 0,
 		"dP": 10,
 		"dS": 0,

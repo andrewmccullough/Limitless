@@ -21,9 +21,12 @@ body > .container
 
         @include noselect
 
-        img
+        .primary, .alternate
             max-width: 300px
             width: 90%
+
+        .alternate
+            display: none
 
 
     #headline
@@ -112,3 +115,53 @@ body > .container
 
             .button:hover
                 background: $accent
+
+@media (max-width: 700px)
+
+    body > .container
+
+        #headline
+
+            .container
+
+                h2
+                    font-size: 4rem
+
+                    #rotate
+                        height: 88px
+
+@media (max-width: 550px)
+
+    body > .container
+
+        #headline
+
+            .container
+
+                h2
+                    font-size: 3rem
+
+                    #rotate
+                        height: 66px
+
+@media (max-width: 400px)
+
+    body > .container
+
+        #splash
+
+            .primary
+                display: none
+
+            .alternate
+                display: inline
+
+        #headline
+
+            .container
+
+                h2
+                    font-size: 2.5rem
+
+                    #rotate
+                        height: 56px

@@ -20,10 +20,22 @@ function positionlogo () {
 function positionintroduction () {
     //  Vertically and horizontally centers designer introduction.
     $("#introduction .container").css({
-        "top"           :   $("#introduction").outerHeight() / 2 - $("#introduction .container").outerHeight() / 2,
         "left"          :   $("#introduction").outerWidth() / 2 - $("#introduction .container").outerWidth() / 2,
         "opacity"       :   1
     })
+    
+    if (window.innerHeight < window.innerWidth) {
+        //  If landscape...
+        $("#introduction .container").css({
+            "top"           :   $("#introduction").outerHeight() / 2 - $("#introduction .container").outerHeight() / 2
+        })
+    } else {
+        //  If portrait...
+        $("#introduction .container").css({
+            "top"           :   $("#introduction").outerHeight() / 2 - $("#introduction .container").outerHeight() / 2
+        })
+    }
+
 }
 
 function positionheadline () {
@@ -53,7 +65,7 @@ $(document).ready(function () {
 
 $(window).resize(function () {
     viewportheight  =   window.innerHeight;
-    
+
     positionlogo ()
     positionintroduction ()
     positionheadline ()

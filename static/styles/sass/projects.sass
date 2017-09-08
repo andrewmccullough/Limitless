@@ -29,9 +29,12 @@
     text-align: center
     @include noselect
 
-    img
+    .primary, .alternate
         max-width: 300px
         width: 90%
+
+    .alternate
+        display: none
 
 #languages, #tools, #projects
 
@@ -215,3 +218,107 @@
                     z-index: 15
 
                     cursor: default
+
+@media (max-width: 850px)
+
+    #projects
+
+        .container
+
+            .project
+
+                .preview
+
+                    img.scale
+                        top: calc(50% - 210px)
+                        width: 700px
+                        left: calc(50% - 350px)
+
+@media (max-width: 750px)
+
+    #projects
+
+        .container
+
+            .project
+
+                .preview
+
+                    img.scale
+                        top: calc(50% - 180px)
+                        width: 600px
+                        left: calc(50% - 300px)
+
+@media (max-width: 650px)
+
+    #projects
+
+        .container
+
+            .project
+
+                .preview
+
+                    img.scale
+                        top: calc(50% - 150px)
+                        width: 500px
+                        left: calc(50% - 250px)
+
+@media (max-width: 550px)
+
+    #projects
+
+        .container
+
+            .project
+
+                .preview
+
+                    img.scale
+                        top: calc(50% - 120px)
+                        width: 400px
+                        left: calc(50% - 200px)
+
+@media (max-width: 450px)
+
+    #projects
+
+        .container
+
+            .project
+
+                .preview
+
+                    img.scale
+                        top: calc(50% - 90px)
+                        width: 300px
+                        left: calc(50% - 150px)
+
+@media (max-width: 420px)
+
+    #languages, #tools, #projects
+
+        .container
+            width: 320px
+
+    #languages, #tools
+        max-height: 180px
+
+        .container
+            text-align: center
+
+            img
+                margin: 5px
+
+    #projects
+        font-size: 0.9rem
+
+@media (max-width: 400px)
+
+    #splash
+
+        .primary
+            display: none
+
+        .alternate
+            display: inline

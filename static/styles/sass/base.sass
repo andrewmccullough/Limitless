@@ -39,57 +39,62 @@ a
 	font-weight: 600
 
 #header
-    position: fixed
-    z-index: 5
+	position: fixed
+	z-index: 5
 
-    top: 0
-    height: 80px
-    left: 0
-    width: 100%
+	top: 0
+	height: 80px
+	left: 0
+	width: 100%
 
-    padding: 0 16px
+	padding: 0 16px
 
-    @include noselect
+	@include noselect
 
-    .left, .right
+	.left, .right
 
-        .active
+		.active
 
-            a
-                cursor: default
+			a
+				cursor: default
 
-        p
-            display: inline-block
-            clear: none
+		p
+			display: inline-block
+			clear: none
 
-            margin: 16px 0      //used for positioning, must total to 26px
+			margin: 16px 0
 
-            font-family: $nunito
-            font-size: 1.1rem
-            font-weight: 900
+			font-family: $nunito
+			font-size: 1.1rem
+			font-weight: 900
 
-            a
-                display: inline-block
+			a
+				display: inline-block
 
-                padding: 10px   //used for positioning, must total to 26px
+				padding: 10px
+				text-decoration: none
 
-                text-decoration: none
+		p:hover, p.active
+			color: white
 
-        p:hover, p.active
-            color: white
+	.left
+		float: left
+		height: 100%
 
-    .left
-        float: left
+		p
+			color: $accent
 
-        height: 100%
-
-        p
-            color: $accent
-
-        p:hover, p.active
+		p:hover, p.active
             background: $accent
 
-    .right
+		img
+			display: none
+
+			height: 48px
+
+			margin: 16px 0 0 0
+
+	.right
         float: right
 
         height: 100%
@@ -100,3 +105,21 @@ a
 
         p:hover, p.active
             background: $dark
+
+@media (orientation: portrait)
+
+    #header
+        background: $athens
+
+
+@media (max-width: 400px)
+
+    #header
+
+        .left
+
+            p
+                display: none
+
+            img
+                display: block

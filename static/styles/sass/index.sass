@@ -16,6 +16,7 @@
         display: block
         position: absolute
 
+        width: 90%
         max-width: 600px
 
         transition: opacity ease 700ms
@@ -143,3 +144,75 @@
 
         .button:hover
             background: $accent
+
+@media (max-width: 770px)
+
+    #headline
+
+        .container
+
+            h2
+                font-size: 4rem
+
+                #rotate
+                    height: 88px
+
+@media (max-width: 620px)
+
+    #headline
+
+        .container
+
+            h2
+                font-size: 3rem
+
+                #rotate
+                    height: 66px
+
+@media (max-width: 480px)
+
+    #headline
+
+        .container
+
+            h2
+                font-size: 2.5rem
+
+                #rotate
+                    height: 56px
+
+    #header
+
+        .right
+
+            p
+                background: $dark
+
+                color: $athens
+
+@media (max-width: 400px)
+
+    #headline
+
+        .container
+
+            h2
+                font-size: 2rem
+
+                #rotate
+                    height: 45px
+
+@media (orientation: portrait)
+
+    #splash
+        margin: 80px 0 0 0
+        min-height: 50%
+
+        #prompt
+            display: none
+
+    #introduction
+        min-height: 0
+
+        .container
+            padding: 0 0 20px 0
