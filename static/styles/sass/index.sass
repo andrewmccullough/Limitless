@@ -10,7 +10,7 @@
 
     @include noselect
 
-    img
+    .primary, .alternate
         opacity: 0
 
         display: block
@@ -20,6 +20,9 @@
         max-width: 600px
 
         transition: opacity ease 700ms
+
+    .alternate
+        display: none
 
     #prompt
         position: absolute
@@ -87,12 +90,12 @@
                 color: $dark
 
 #introduction
+    opacity: 0.2
+    
     position: relative
 
     min-height: 100%
     width: 100%
-
-    opacity: 0
 
     @include noselect
 
@@ -201,6 +204,14 @@
 
                 #rotate
                     height: 45px
+
+    #splash
+
+        .primary
+            display: none
+
+        .alternate
+            display: inline
 
 @media (orientation: portrait)
 
