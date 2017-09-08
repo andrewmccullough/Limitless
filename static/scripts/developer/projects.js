@@ -42,7 +42,7 @@ function logoscroll () {
 
 function colorizescroll () {
 
-    var startfade   =   viewportheight * 0.00
+    var startfade   =   viewportheight * 0.05
     var endfade     =   viewportheight * 0.15
     var faderange   =   endfade - startfade
 
