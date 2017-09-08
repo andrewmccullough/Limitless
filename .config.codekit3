@@ -27,16 +27,83 @@
 		"oAP": "\/.htaccess",
 		"oF": 0
 		},
+	"\/android-chrome-192x192.png": {
+		"ft": 32768,
+		"iS": 12053,
+		"oA": 0,
+		"oAP": "\/android-chrome-192x192.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/android-chrome-384x384.png": {
+		"ft": 32768,
+		"iS": 26329,
+		"oA": 0,
+		"oAP": "\/android-chrome-384x384.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/apple-touch-icon.png": {
+		"ft": 32768,
+		"iS": 2823,
+		"oA": 0,
+		"oAP": "\/apple-touch-icon.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"\/archives": {
 		"ft": 65536,
 		"oA": 1,
 		"oAP": "\/build\/archives",
 		"oF": 0
 		},
+	"\/browserconfig.xml": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/browserconfig.xml",
+		"oF": 0
+		},
 	"\/contact.html": {
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/contact.html",
+		"oF": 0
+		},
+	"\/favicon-16x16.png": {
+		"ft": 32768,
+		"iS": 1282,
+		"oA": 0,
+		"oAP": "\/favicon-16x16.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/favicon-32x32.png": {
+		"ft": 32768,
+		"iS": 1660,
+		"oA": 0,
+		"oAP": "\/favicon-32x32.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/favicon.ico": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/favicon.ico",
 		"oF": 0
 		},
 	"\/includable": {
@@ -51,11 +118,40 @@
 		"oAP": "\/index.html",
 		"oF": 0
 		},
+	"\/manifest.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "\/manifest-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/mstile-150x150.png": {
+		"ft": 32768,
+		"iS": 0,
+		"oA": 0,
+		"oAP": "\/mstile-150x150.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"\/projects.html": {
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/projects.html",
 		"oF": 0
+		},
+	"\/safari-pinned-tab.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/safari-pinned-tab.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
 		},
 	"\/static\/external": {
 		"ft": 65536,
