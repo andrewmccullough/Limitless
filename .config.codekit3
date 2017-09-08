@@ -33,6 +33,12 @@
 		"oAP": "\/build\/archives",
 		"oF": 0
 		},
+	"\/contact.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/contact.html",
+		"oF": 0
+		},
 	"\/includable": {
 		"ft": 65536,
 		"oA": 1,
@@ -63,6 +69,16 @@
 		"oAP": "\/build\/static\/graphics",
 		"oF": 0
 		},
+	"\/static\/scripts\/developer\/contact.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/static\/scripts\/min\/contact.js",
+		"oF": 0,
+		"sC": 0,
+		"tS": 0
+		},
 	"\/static\/scripts\/developer\/index.js": {
 		"ft": 64,
 		"ma": 0,
@@ -79,6 +95,16 @@
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/static\/scripts\/min\/projects.js",
+		"oF": 0,
+		"sC": 0,
+		"tS": 0
+		},
+	"\/static\/scripts\/min\/contact.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/static\/scripts\/min\/contact.js",
 		"oF": 0,
 		"sC": 0,
 		"tS": 0
@@ -102,6 +128,16 @@
 		"oF": 0,
 		"sC": 0,
 		"tS": 0
+		},
+	"\/static\/styles\/css\/contact.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/static\/styles\/css\/contact-min.css",
+		"oF": 0,
+		"oS": 3
 		},
 	"\/static\/styles\/css\/index.css": {
 		"aP": 1,
@@ -136,6 +172,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/static\/styles\/sass\/contact.sass": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 2,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/static\/styles\/css\/contact.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
 	"\/static\/styles\/sass\/index.sass": {
 		"aP": 1,
 		"bl": 0,
@@ -146,7 +195,7 @@
 		"oA": 0,
 		"oAP": "\/static\/styles\/css\/index.css",
 		"oF": 2,
-		"oS": 2,
+		"oS": 3,
 		"uL": 1
 		},
 	"\/static\/styles\/sass\/projects.sass": {
@@ -159,7 +208,7 @@
 		"oA": 0,
 		"oAP": "\/static\/styles\/css\/projects.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 3,
 		"uL": 1
 		},
 	"\/stylerules.txt": {

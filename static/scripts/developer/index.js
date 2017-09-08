@@ -44,12 +44,16 @@ function positionheadline () {
 }
 
 $(document).ready(function () {
+    viewportheight  =   window.innerHeight;
+
     positionlogo ()
     positionintroduction ()
     positionheadline ()
 })
 
 $(window).resize(function () {
+    viewportheight  =   window.innerHeight;
+    
     positionlogo ()
     positionintroduction ()
     positionheadline ()
@@ -126,7 +130,7 @@ function headlinescroll () {
 }
 
 function introductionscroll () {
-    
+
     var startfade   =   $("#introduction .container").offset().top + 10
     var endfade     =   startfade + $("#introduction .container").height()
 

@@ -4,3 +4,19 @@ Options -MultiViews
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^([^\.]+)$ $1.html [NC,L]
+
+
+##### IMAGE FILES, 1 YEAR EXPIRATION #####
+<filesMatch ".(jpg|jpeg|png|gif|ico|svg)$">
+Header set Cache-Control "max-age=31536000, public"
+</filesMatch>
+
+##### JS AND CSS FILES, 1 WEEK EXPIRATION #####
+<filesMatch ".(css|js)$">
+Header set Cache-Control "max-age=2628000, public"
+</filesMatch>
+
+##### PHP, HTML FILES, NEVER CACHE #####
+<FilesMatch "\.(html|htm|php|cgi|pl)$">
+Header set Cache-Control "max-age=0, private, no-store, no-cache, must-revalidate"
+</FilesMatch>

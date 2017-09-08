@@ -1,6 +1,6 @@
 $("#projects .project .preview img").click(function () {
-    // If visitor clicks on preview image, scale to fullscreen, show cover behind image, and lock scrolling.
-    // If visitor clicks fullscreen preview image, revert to normal size, hide cover, and unlock scrolling.
+    //  If visitor clicks on preview image, scale to fullscreen, show cover behind image, and lock scrolling.
+    //  If visitor clicks fullscreen preview image, revert to normal size, hide cover, and unlock scrolling.
 
     $(this).toggleClass("scale")
     $("#cover").toggleClass("active")
@@ -8,7 +8,7 @@ $("#projects .project .preview img").click(function () {
 })
 
 $("#cover").click(function () {
-    // If visitor clicks cover behind fullscreen preview image, revert to normal size, hide cover, and unlock scrolling.
+    //  If visitor clicks cover behind fullscreen preview image, revert to normal size, hide cover, and unlock scrolling.
 
     $("#projects .project .preview img").removeClass("scale")
     $("#cover").removeClass("active")
@@ -43,7 +43,7 @@ function logoscroll () {
 function colorizescroll () {
 
     var startfade   =   viewportheight * 0.00
-    var endfade     =   viewportheight * 0.20
+    var endfade     =   viewportheight * 0.15
     var faderange   =   endfade - startfade
 
     var percent     =   (endfade - viewporttop) / faderange //  x if fading out.

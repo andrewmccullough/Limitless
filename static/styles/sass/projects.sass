@@ -1,8 +1,5 @@
 @import "base"
 
-body
-    text-align: center
-
 #cover
     background: white
 
@@ -22,70 +19,6 @@ body
 
 #cover.active
     visibility: visible
-
-#header
-    position: fixed
-
-    z-index: 5
-
-    width: 100%
-    height: 80px
-    left: 0
-    top: 0
-
-    padding: 0 16px
-
-    @include noselect
-
-    .left, .right
-
-        .active
-
-            a
-                cursor: default
-
-        p
-
-            margin: 16px 0      //used for positioning, must total to 26px
-            clear: none
-            display: inline-block
-
-            font-family: $nunito
-            font-weight: 900
-            font-size: 1.1rem
-
-            a
-                display: inline-block
-
-                padding: 10px   //used for positioning, must total to 26px
-
-                text-decoration: none
-
-        p:hover, p.active
-            color: white
-
-    .left
-        float: left
-
-        height: 100%
-
-        p
-            color: $accent
-
-        p:hover, p.active
-            background: $accent
-
-    .right
-        float: right
-
-        height: 100%
-
-        p
-            color: $dark
-            text-transform: lowercase
-
-        p:hover, p.active
-            background: $dark
 
 #splash
     width: 100%
@@ -146,6 +79,10 @@ body
     width: 100%
 
     padding: 60px 0
+
+    text-align: center
+
+    @include noselect
 
     h3
         margin: 0

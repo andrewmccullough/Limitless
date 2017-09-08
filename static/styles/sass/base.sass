@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css?family=Nunito:200,300,400,600,700,800,900")
-@import url("https://fonts.googleapis.com/css?family=Abril+Fatface|Playfair+Display:700,900")
 
 $background: #daecf3
 $accent: #ff404e
@@ -8,8 +7,6 @@ $light: #1ca5b8
 $athens: #ecf0f1
 
 $nunito: "Nunito", sans-serif
-$abril: "Abril Fatface", serif
-$playfair: "Playfair Display", serif
 
 @mixin noselect
 	user-select: none
@@ -40,3 +37,66 @@ a
 .tippy-popper
 	font-family: $nunito
 	font-weight: 600
+
+#header
+    position: fixed
+    z-index: 5
+
+    top: 0
+    height: 80px
+    left: 0
+    width: 100%
+
+    padding: 0 16px
+
+    @include noselect
+
+    .left, .right
+
+        .active
+
+            a
+                cursor: default
+
+        p
+            display: inline-block
+            clear: none
+
+            margin: 16px 0      //used for positioning, must total to 26px
+
+            font-family: $nunito
+            font-size: 1.1rem
+            font-weight: 900
+
+            a
+                display: inline-block
+
+                padding: 10px   //used for positioning, must total to 26px
+
+                text-decoration: none
+
+        p:hover, p.active
+            color: white
+
+    .left
+        float: left
+
+        height: 100%
+
+        p
+            color: $accent
+
+        p:hover, p.active
+            background: $accent
+
+    .right
+        float: right
+
+        height: 100%
+
+        p
+            color: $dark
+            text-transform: lowercase
+
+        p:hover, p.active
+            background: $dark

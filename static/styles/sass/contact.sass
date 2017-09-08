@@ -1,0 +1,114 @@
+@import "base"
+
+body
+    height: 0
+
+body > .container
+    opacity: 0
+
+    position: absolute
+
+    width: 100%
+
+    transition: opacity ease 700ms
+
+    #splash
+        width: 100%
+
+        padding: 50px 0
+
+        text-align: center
+
+        @include noselect
+
+        img
+            max-width: 300px
+            width: 90%
+
+
+    #headline
+        position: relative
+
+        width: 100%
+
+        @include noselect
+
+        .container
+            width: 100%
+
+            text-align: center
+
+            h2
+                margin: 0
+
+                font-family: $nunito
+                font-size: 5rem
+                font-weight: 900
+
+                white-space: nowrap
+
+                #rotate
+                    display: inline-block
+                    overflow: hidden
+
+                    height: 109px
+
+                    vertical-align: middle
+
+                    span
+                        display: inline-block
+                        float: left
+                        clear: left
+
+                        color: $accent
+
+                    span:nth-child(1)
+                        transition: margin ease 400ms
+
+                    span:nth-child(2)
+                        transition: margin ease 400ms
+
+                > span
+                    display: inline-block
+                    vertical-align: middle
+
+                    color: $dark
+
+    #content
+        padding: 50px 0
+
+        @include noselect
+
+        .container
+            text-align: center
+
+            .button
+                background: $dark
+
+                display: inline-block
+
+                padding: 15px
+
+                color: $background
+                font-family: $nunito
+
+                cursor: pointer
+
+                h3
+                    margin: 0
+
+                    font-size: 2rem
+                    font-weight: 900
+
+                p
+                    margin: 0
+
+                    font-size: 0.8rem
+                    font-weight: 200
+
+                    a
+                        font-weight: 700
+                        text-decoration: none
+
+            .button:hover
+                background: $accent
