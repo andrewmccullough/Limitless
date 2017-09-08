@@ -57,8 +57,8 @@ $(window).resize(function () {
 
 function logoscroll () {
 
-    var startfade   =   viewportheight * 0.25
-    var endfade     =   viewportheight * 0.60
+    var startfade   =   $("#splash img").offset().top - 10
+    var endfade     =   startfade + $("#splash img").height()
     var faderange   =   endfade - startfade
 
     var percent     =   (endfade - viewporttop) / faderange //  x if fading out.
@@ -96,8 +96,8 @@ function logoscroll () {
 }
 
 function headlinescroll () {
-    var startfade   =   viewportheight * 1.10
-    var endfade     =   viewportheight * 1.20
+    var startfade   =   $("#headline").offset().top + 10
+    var endfade     =   startfade + $("#headline").height()
     var faderange   =   endfade - startfade
 
     var percent     =   1 - (endfade - viewportbottom) / faderange //   1 - x if fading in.
@@ -126,8 +126,9 @@ function headlinescroll () {
 }
 
 function introductionscroll () {
-    var startfade   =   $(document).height() - viewportheight * 0.60
-    var endfade     =   $(document).height() - viewportheight * 0.25
+    
+    var startfade   =   $("#introduction .container").offset().top + 10
+    var endfade     =   startfade + $("#introduction .container").height()
 
     var faderange   =   endfade - startfade
 
@@ -158,7 +159,7 @@ function introductionscroll () {
 }
 
 function rotatewords () {
-    var startrotate =   $("#headline").offset().top
+    var startrotate =   $("#headline").offset().top + 10
     var endrotate   =   null
 
     var first       =   startrotate + viewportheight * 0.40 //  "the web is limitless" to "code..."

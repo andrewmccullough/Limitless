@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Nunito:200,300,400,600,700,800,900");
+@import url("https://fonts.googleapis.com/css?family=Abril+Fatface|Playfair+Display:700,900");
 html {
   height: 100%;
   font-size: 1rem; }
@@ -90,56 +91,47 @@ body {
     max-width: 300px;
     width: 90%; }
 
+#languages .container, #tools .container, #projects .container {
+  width: 420px;
+  margin: 0 auto;
+  text-align: left; }
+  #languages .container h3, #tools .container h3, #projects .container h3 {
+    margin: 0 8px;
+    text-align: left;
+    font-family: "Nunito", sans-serif;
+    font-weight: 800;
+    color: #012d41;
+    font-size: 1.10rem;
+    text-transform: lowercase;
+    opacity: 0.90; }
+  #languages .container hr, #tools .container hr, #projects .container hr {
+    margin: 5px 0;
+    border: 0;
+    border-top: 1px solid #012d41; }
+
 #languages, #tools {
   max-height: 208px;
   overflow: hidden;
   user-select: none; }
-  #languages .container, #tools .container {
-    max-width: 420px;
-    width: 90%;
-    margin: 0 auto;
-    text-align: left; }
-    #languages .container h3, #tools .container h3 {
-      margin: 10px;
-      text-align: left;
-      font-family: "Nunito", sans-serif;
-      font-weight: 800;
-      color: #012d41;
-      font-size: 0.9rem;
-      text-transform: uppercase;
-      opacity: 0.90; }
-    #languages .container img, #tools .container img {
-      width: 60px;
-      margin: 10px;
-      filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscale");
-      filter: gray;
-      -webkit-filter: grayscale(100%); }
-    #languages .container img:hover, #languages .container img.colorized, #tools .container img:hover, #tools .container img.colorized {
-      filter: none;
-      -webkit-filter: grayscale(0%); }
+  #languages .container img, #tools .container img {
+    width: 60px;
+    margin: 10px; }
 
-#section {
-  opacity: 0.50;
-  width: 50px;
-  margin: 60px 0; }
+#separator {
+  width: 100%;
+  padding: 60px 0; }
+  #separator h3 {
+    margin: 0;
+    color: #012d41;
+    font-family: "Nunito", sans-serif;
+    font-size: 2rem;
+    font-weight: 900; }
 
 #projects {
   user-select: none; }
   #projects .container {
     margin: 0 auto 30px auto;
-    max-width: 400px; }
-    #projects .container h3 {
-      max-width: 420px;
-      margin: 0 10px 10px 10px;
-      text-align: left;
-      font-family: "Nunito", sans-serif;
-      font-weight: 800;
-      color: #012d41;
-      font-size: 0.9rem;
-      text-transform: uppercase;
-      opacity: 0.90; }
-    #projects .container hr.title {
-      max-width: 420px; }
+    width: 420px; }
     #projects .container .separator {
       visibility: hidden; }
     #projects .container .project:nth-of-type(odd) .info {
@@ -157,7 +149,8 @@ body {
     #projects .container .project {
       width: 100%;
       height: 220px;
-      margin: 0 0 0 0; }
+      margin: 0 0 0 0;
+      color: #012d41; }
       #projects .container .project .info {
         height: 100%;
         width: 45%; }
@@ -165,7 +158,7 @@ body {
           margin: 0 0 5px 0;
           font-size: 1.4rem;
           font-family: "Nunito", sans-serif;
-          font-weight: 900;
+          font-weight: 800;
           line-height: 1.3rem; }
         #projects .container .project .info .date {
           margin: 0;
@@ -209,4 +202,4 @@ body {
           width: 800px;
           left: calc(50% - 400px);
           z-index: 15;
-          cursor: pointer; }
+          cursor: default; }

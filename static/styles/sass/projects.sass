@@ -100,50 +100,56 @@ body
         max-width: 300px
         width: 90%
 
-#languages, #tools
-    max-height: 208px
-    overflow: hidden
-    @include noselect
+#languages, #tools, #projects
 
     .container
-        max-width: 420px
-        width: 90%
+        width: 420px
 
         margin: 0 auto
 
         text-align: left
 
         h3
-            margin: 10px
+            margin: 0 8px
 
             text-align: left
             font-family: $nunito
             font-weight: 800
             color: $dark
-            font-size: 0.9rem
-            text-transform: uppercase
+            font-size: 1.10rem
+            text-transform: lowercase
 
             opacity: 0.90
+
+        hr
+            margin: 5px 0
+
+            border: 0
+            border-top: 1px solid $dark
+
+#languages, #tools
+    max-height: 208px
+    overflow: hidden
+    @include noselect
+
+    .container
 
         img
             width: 60px
             margin: 10px
 
-            filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale")
-            filter: gray
-            -webkit-filter: grayscale(100%)
-            //transition: all 300ms ease
+#separator
+    width: 100%
 
-        img:hover, img.colorized
-            filter: none
-            -webkit-filter: grayscale(0%)
+    padding: 60px 0
 
-#section
-    opacity: 0.50
+    h3
+        margin: 0
 
-    width: 50px
-
-    margin: 60px 0
+        color: $dark
+        font-family: $nunito
+        font-size: 2rem
+        font-weight: 900
 
 #projects
     @include noselect
@@ -151,24 +157,7 @@ body
     .container
         margin: 0 auto 30px auto
 
-        max-width: 400px
-
-        h3
-            max-width: 420px
-
-            margin: 0 10px 10px 10px
-
-            text-align: left
-            font-family: $nunito
-            font-weight: 800
-            color: $dark
-            font-size: 0.9rem
-            text-transform: uppercase
-
-            opacity: 0.90
-
-        hr.title
-            max-width: 420px
+        width: 420px
 
         .separator
             visibility: hidden
@@ -205,6 +194,8 @@ body
 
             margin: 0 0 0 0
 
+            color: $dark
+
             .info
                 height: 100%
                 width: 45%
@@ -214,7 +205,7 @@ body
 
                     font-size: 1.4rem
                     font-family: $nunito
-                    font-weight: 900
+                    font-weight: 800
                     line-height: 1.3rem
 
                 .date
@@ -282,4 +273,4 @@ body
 
                     z-index: 15
 
-                    cursor: pointer
+                    cursor: default

@@ -15,10 +15,22 @@
 		"oAP": "\/.gitattributes",
 		"oF": 0
 		},
+	"\/.gitignore": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/.gitignore",
+		"oF": 0
+		},
 	"\/.htaccess": {
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/.htaccess",
+		"oF": 0
+		},
+	"\/archives": {
+		"ft": 65536,
+		"oA": 1,
+		"oAP": "\/build\/archives",
 		"oF": 0
 		},
 	"\/includable": {
@@ -39,346 +51,17 @@
 		"oAP": "\/projects.html",
 		"oF": 0
 		},
-	"\/static\/external\/foundation.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "\/static\/external\/foundation-min.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"\/static\/external\/foundation.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/static\/min\/foundation.js",
-		"oF": 0,
-		"sC": 0,
-		"tS": 0
-		},
-	"\/static\/external\/tippy.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "\/static\/external\/tippy-min.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"\/static\/external\/tippy.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/static\/min\/tippy.js",
-		"oF": 0,
-		"sC": 0,
-		"tS": 0
-		},
-	"\/static\/graphics\/languages\/css3-original.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/static\/graphics\/languages\/css3-original.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/static\/graphics\/languages\/html5-original.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/static\/graphics\/languages\/html5-original.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/static\/graphics\/languages\/javascript-original.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/static\/graphics\/languages\/javascript-original.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/static\/graphics\/languages\/jquery-original.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/static\/graphics\/languages\/jquery-original.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/static\/graphics\/languages\/mysql-original.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/static\/graphics\/languages\/mysql-original.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/static\/graphics\/languages\/nodejs-original.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/static\/graphics\/languages\/nodejs-original.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/static\/graphics\/languages\/php-plain.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/static\/graphics\/languages\/php-plain.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/static\/graphics\/languages\/python-original.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/static\/graphics\/languages\/python-original.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/static\/graphics\/languages\/sass-original.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/static\/graphics\/languages\/sass-original.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/static\/graphics\/limitless-logo\/accent.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/static\/graphics\/limitless-logo\/accent.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/static\/graphics\/limitless-logo\/background.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/static\/graphics\/limitless-logo\/background.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/static\/graphics\/limitless-logo\/dark.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/static\/graphics\/limitless-logo\/dark.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/static\/graphics\/limitless-logo\/light.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/static\/graphics\/limitless-logo\/light.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/static\/graphics\/previews\/dragontech.png": {
-		"ft": 32768,
-		"iS": 87447,
-		"oA": 0,
-		"oAP": "\/static\/graphics\/previews\/dragontech.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/static\/graphics\/previews\/gpa.png": {
-		"ft": 32768,
-		"iS": 146914,
-		"oA": 0,
-		"oAP": "\/static\/graphics\/previews\/gpa.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/static\/graphics\/previews\/keepit.png": {
-		"ft": 32768,
-		"iS": 26037,
-		"oA": 0,
-		"oAP": "\/static\/graphics\/previews\/keepit.png",
-		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
-		},
-	"\/static\/graphics\/previews\/studytime.png": {
-		"ft": 32768,
-		"iS": 455122,
-		"oA": 0,
-		"oAP": "\/static\/graphics\/previews\/studytime.png",
-		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
-		},
-	"\/static\/graphics\/previews\/template.afdesign": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/static\/graphics\/previews\/template.afdesign",
+	"\/static\/external": {
+		"ft": 65536,
+		"oA": 1,
+		"oAP": "\/build\/static\/external",
 		"oF": 0
 		},
-	"\/static\/graphics\/separator.png": {
-		"ft": 32768,
-		"iS": 5423,
-		"oA": 0,
-		"oAP": "\/static\/graphics\/separator.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/static\/graphics\/separator.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/static\/graphics\/separator.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/static\/graphics\/tools\/atom-original.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/static\/graphics\/tools\/atom-original.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/static\/graphics\/tools\/bower-original.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/static\/graphics\/tools\/bower-original.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/static\/graphics\/tools\/chrome-original.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/static\/graphics\/tools\/chrome-original.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/static\/graphics\/tools\/foundation-original.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/static\/graphics\/tools\/foundation-original.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/static\/graphics\/tools\/github-original.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/static\/graphics\/tools\/github-original.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/static\/graphics\/tools\/illustrator-line.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/static\/graphics\/tools\/illustrator-line.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/static\/graphics\/tools\/npm-original-wordmark.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/static\/graphics\/tools\/npm-original-wordmark.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/static\/graphics\/tools\/photoshop-line.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/static\/graphics\/tools\/photoshop-line.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/static\/graphics\/tools\/pycharm-original.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/static\/graphics\/tools\/pycharm-original.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/static\/graphics\/tools\/trello-plain.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/static\/graphics\/tools\/trello-plain.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
+	"\/static\/graphics": {
+		"ft": 65536,
+		"oA": 1,
+		"oAP": "\/build\/static\/graphics",
+		"oF": 0
 		},
 	"\/static\/scripts\/developer\/index.js": {
 		"ft": 64,
@@ -2464,7 +2147,7 @@
 		],
 	"overrideExternalServerCSS": 0,
 	"previewPathAddition": "",
-	"skippedFoldersString": "log, _logs, logs, _cache, cache, \/storage\/framework\/sessions, node_modules, \/includable",
+	"skippedFoldersString": "log, _logs, logs, _cache, cache, \/storage\/framework\/sessions, node_modules, \/includable, \/archives, \/static\/external, \/static\/graphics",
 	"sourceFolderName": "source",
 	"susyVersion": 3,
 	"uglifyDefinesString": "",
