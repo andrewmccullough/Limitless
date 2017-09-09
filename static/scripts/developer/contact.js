@@ -11,26 +11,9 @@ function positionpage () {
     //  Horizontally and vertically centers container on load (rotating headline and button).
     //  If viewport is smaller than the container (mobile device), simply adds padding at the top.
 
-    var occupiedviewport = $("#splash").outerHeight(true) + $("#splash").offset().top
-    var containerheight = $("body > .container").height()
-
-    console.log(viewportheight - occupiedviewport)
-
-    if (viewportheight - occupiedviewport > containerheight) {
-
-        $("body > .container").css({
-            "opacity"   :   1,
-            "top"       :   (viewportheight + occupiedviewport - 50) / 2 - containerheight / 2
-        })
-
-    } else {
-
-        $("body > .container").css({
-            "opacity"   :   1,
-            "top"       :   $("#splash").outerHeight(true) + $("#splash").offset().top
-        })
-
-    }
+    $("body > .container").css({
+        "opacity"   :   1
+    })
 
 }
 
