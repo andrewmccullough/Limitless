@@ -8,20 +8,30 @@ $("#email").click(function () {
 })
 
 function positionpage () {
-    //  Horizontally and vertically centers container on load (logo, rotating headline, and button).
+    //  Horizontally and vertically centers container on load (rotating headline and button).
     //  If viewport is smaller than the container (mobile device), simply adds padding at the top.
-    var containerheight =   $("body > .container").outerHeight()
-    if (viewportheight - 80 > containerheight) {
+
+    var occupiedviewport = $("#splash").outerHeight(true) + $("#splash").offset().top
+    var containerheight = $("body > .container").height()
+
+    console.log(viewportheight - occupiedviewport)
+
+    if (viewportheight - occupiedviewport > containerheight) {
+
         $("body > .container").css({
-            "top"       :   viewportheight / 2 - containerheight / 2,
-            "opacity"   :   1
+            "opacity"   :   1,
+            "top"       :   (viewportheight + occupiedviewport - 50) / 2 - containerheight / 2
         })
+
     } else {
+
         $("body > .container").css({
-            "top"       :   50,
-            "opacity"   :   1
+            "opacity"   :   1,
+            "top"       :   $("#splash").outerHeight(true) + $("#splash").offset().top
         })
+
     }
+
 }
 
 function rotatewords () {
