@@ -1,5 +1,5 @@
 function email () {
-    window.location.href = "mailto:contact@limitlessdesign.io";
+    window.location.href = "mailto:andrew@limitlessdesign.io";
 }
 
 $("#email").click(function () {
